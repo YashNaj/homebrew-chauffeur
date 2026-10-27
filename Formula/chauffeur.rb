@@ -1,7 +1,7 @@
 class Chauffeur < Formula
   desc "Let a coding agent drive the iOS Simulator, with every action verified"
   homepage "https://github.com/YashNaj/chauffeur"
-  url "https://github.com/YashNaj/chauffeur.git", tag: "v0.1.1", revision: "ca97bef39ecddea4e7877fcd2a128b2433ddf9d5"
+  url "https://github.com/YashNaj/chauffeur.git", tag: "v0.2.0", revision: "5c0aba59a2268e9085c18e0f2d3f0d068bec86d0"
   license "Apache-2.0"
 
   depends_on xcode: ["26.0", :build]
@@ -14,6 +14,6 @@ class Chauffeur < Formula
   end
 
   test do
-    assert_match "0.1.1", shell_output("#{bin}/chauffeur --version")
+    assert_match "0.2.0", shell_output("#{bin}/chauffeur --version")
   end
 end
